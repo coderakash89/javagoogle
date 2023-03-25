@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java Google</title>
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="/resources/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function loadHome(templateName) {
+            const contentDiv = document.getElementById(templateName);
+            contentDiv.innerHTML = await fetchHtmlAsText(templateName+".html");
+        }
+
+        window.onload = function() {
+            loadHome("objectClassMethods");
+            loadHome("binding");
+
+        };
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+               <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#coreJava" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Core Java</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i>
+                            <span class="ms-1 d-none d-sm-inline">Collections</span>
+                        </a>
+                        <!--<ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#collectionList" class="nav-link px-0"> <span class="d-none d-sm-inline">List</span> 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Map</span> 2 </a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i>
+                            <span class="ms-1 d-none d-sm-inline">THREADING</span></a>
+                    </li>
+
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Hibernate</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Web Services</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">SPRING</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">SPRING Boot</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#designPattern" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Design Patterns</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">System Design</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Behavioral</span> </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col py-3">
+           <div id="coreJava" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+               <div class="badge bg-primary text-capitalize">Core Java </div>
+
+               <div class="accordion">
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               What is the difference between JDK, JVM and JRE?
+                           </button>
+                       </h2>
+                       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               What is the difference between java 6 and java 8?
+                           </button>
+                       </h2>
+                       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button"
+                                   data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                   aria-controls="collapseThree">
+                               What are the different methods present in Object class?
+                           </button>
+                       </h2>
+                       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body" id="objectClassMethods">
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                               What are OOPS concepts? Explain each in brief
+                           </button>
+                       </h2>
+                       <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                               Can we have super and this?
+                           </button>
+                       </h2>
+                       <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                               String class extends which class?
+                           </button>
+                       </h2>
+                       <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                               <code>
+                               public final class String extends Object
+                               implements Serializable, Comparable&lt;String&gt;, CharSequence
+                               </code>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                               How do we achieve abstraction and encapsulation in our programming?
+                           </button>
+                       </h2>
+                       <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                               What are different types of polymorphism? Explain each of them?
+                           </button>
+                       </h2>
+                       <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                               What is the difference between overriding and overloading?
+                           </button>
+                       </h2>
+                       <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                               Can one among two overloaded classes throw exceptions and the second won't?
+                               If yes Can we say that as overloading?
+                           </button>
+                       </h2>
+                       <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                               Rules of function overriding?
+                           </button>
+                       </h2>
+                       <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                               Can we have different\reduced access modifiers for overloaded methods?
+                           </button>
+                       </h2>
+                       <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                               Difference between Static and Dynamic binding in Java?
+                           </button>
+                       </h2>
+                       <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet" id="binding">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                               What is meant by the static keyword?
+                           </button>
+                       </h2>
+                       <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                               Can we override static functions? If yes then how if no then why not?
+                           </button>
+                       </h2>
+                       <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                               What is the difference between interface and abstract class?
+                               If abstract class provides the same functionality as interface (means in abstract class contains abstract methods as interface) so why do we need interfaces?
+                           </button>
+                       </h2>
+                       <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                               Can we have a static/final interface? If not then why?
+                           </button>
+                       </h2>
+                       <div id="collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                               What is the marker interface? Give example?
+                           </button>
+                       </h2>
+                       <div id="collapse19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                               What will happen if we extend an abstract class and not implement an abstract method in it?
+                               Is there any way by which we can use abstract class by not overriding its methods?
+                           </button>
+                       </h2>
+                       <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                               What is Serialization? How do we achieve Serialization in Java?
+                           </button>
+                       </h2>
+                       <div id="collapse21" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                               What is the advantages of version ID in Serialization?
+                           </button>
+                       </h2>
+                       <div id="collapse22" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                               What can we do if we don't want to make some data members non-Serializable?
+                           </button>
+                       </h2>
+                       <div id="collapse23" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                               What is the difference between&nbsp;<strong>transient</strong>&nbsp;and&nbsp;<strong>volatile</strong>?
+                           </button>
+                       </h2>
+                       <div id="collapse24" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                               What is the difference between String and StringBuffer class?
+                           </button>
+                       </h2>
+                       <div id="collapse25" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                               What is the difference between StringBuffer and StringBuilder?
+                           </button>
+                       </h2>
+                       <div id="collapse26" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                               How can you make a mutable object immutable?
+                           </button>
+                       </h2>
+                       <div id="collapse27" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                               What is the need of overriding equals and hashCode methods?
+                           </button>
+                       </h2>
+                       <div id="collapse28" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                               What is the difference between == and equals ()?
+                           </button>
+                       </h2>
+                       <div id="collapse29" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                               What difference does it make when we create String like&nbsp; <code> String str1=”someValue”</code>&nbsp;and&nbsp;<code>String str1=new String(“someValue”); </code>
+                           </button>
+                       </h2>
+                       <div id="collapse30" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                               Why String is Immutable?
+                           </button>
+                       </h2>
+                       <div id="collapse31" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                               Why do we have stringPool? and what are the changes for StringPool in Java8
+                           </button>
+                       </h2>
+                       <div id="collapse32" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+
+
+                   <div class="accordion-item" style="display:none;">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseXXX" aria-expanded="false" aria-controls="collapseXXX">
+                               Heading goes here...
+                           </button>
+                       </h2>
+                       <div id="collapseXXX" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                                Details goes here...
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <!--End of #coreJava-->
+
+            <div id="collectionList" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Collections</div>
+
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collectionQ1" aria-expanded="false" aria-controls="collectionQ1">
+                            What is the contract between hashcode and equals?
+                        </button>
+                    </h2>
+                    <div id="collectionQ1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!--End of Collections -->
+
+            <!--Start of Design Patterns -->
+            <div id="designPattern" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Design Patterns</div>
+            <div class="accordion">
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                        What is a Singleton Pattern? Implement code for it?
+                        What will happen in case of cloning, reflection, serialisation.
+                    </button>
+                </h2>
+                <div id="collapse33" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bd-code-snippet">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        </div> <!--End of col py-3-->
+    </div>
+</div>
+
+</body>
+</html>

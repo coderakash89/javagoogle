@@ -1,0 +1,62 @@
+<div class="highlight">
+    <strong>static binding</strong> the method or variable version that is going to be called is resolved at compile time, while in <strong>dynamic binding </strong> the compiler could not resolve which version of a method or variable is going to bind.
+    Method overloading is resolved using <strong>static binding</strong> in Java at compile time while method overriding is resolved using <strong>dynamic binding </strong> in Java at runtime
+    <h3>Dynamic Binding in Java - Late Binding</h3>
+    If we have two methods or variable with the same name in a class hierarchy than it becomes tricky to find which version is going to be called at compile time, this scenario is called <strong>dynamic binding </strong>.
+    <hr>
+    <pre>
+        <code>
+            public class Fruit {
+            public void getName(){
+            System.out.println("My name is fruit !");
+            }
+            }
+            public class Apple extends Fruit {
+            @Override
+            public void getName() {
+            System.out.println("My name is apple !");
+            }
+            }
+            public class Implementation {
+            public static void main(String[] args) {
+            /* This is called Dynamic binding, as the compiler will never know which Version of getName() is going to called at runtime.  */
+            Fruit fruit = new Apple();
+            fruit.getName();
+            }
+            }
+        </code>
+    </pre>
+    <h3>Static Binding in Java - Early Binding</h3>
+    Static Binding or Early Binding, the compiler can resolve the binding at compile time. All the static method calls are resolved at compile time itself because static methods are class methods and they are accessed using the class name itself. Hence there is no confusion for the compiler to resolve, which version of the method is going to be called. See the example below
+    <hr>
+    <pre>
+        <code class="language-html">
+            public class Fruit {
+            public static void staticPart() {
+            System.out.println("I am static part of fruit !");
+            }
+            }
+
+            public class Apple extends Fruit {
+            /*
+            *  this is not a overriden method
+            */
+            public static void staticPart() {
+            System.out.println("I am static part of apple !");
+            }
+            }
+
+            public class Implementation {
+            public static void main(String[] args) {
+            /*
+            * This is an example of static binding, static members are called with
+            * class name and hence, binding is resolved at compiletime itself.
+            */
+            Apple.staticPart();
+            Fruit.staticPart();
+            }
+            }
+        </code>
+    </pre>
+</div>
+
