@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,6 +41,13 @@
                     </li>
 
                     <li>
+                        <a href="#exception" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-speedometer2"></i>
+                            <span class="ms-1 d-none d-sm-inline">Exception</span>
+                        </a>
+                    </li>
+
+                    <li>
                         <a href="#collectionList" class="nav-link align-middle px-0">
                             <i class="fs-4 bi-speedometer2"></i>
                             <span class="ms-1 d-none d-sm-inline">Collections</span>
@@ -48,29 +55,44 @@
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
+                        <a href="#threading" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-table"></i>
-                            <span class="ms-1 d-none d-sm-inline">THREADING</span></a>
+                            <span class="ms-1 d-none d-sm-inline">Threading</span></a>
                     </li>
 
                     <li>
-                        <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Hibernate</span>
-                        </a>
+                        <a href="#sql" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i>
+                            <span class="ms-1 d-none d-sm-inline">SQL</span></a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Web Services</span> </a>
+                        <a href="#hibernate" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i>
+                            <span class="ms-1 d-none d-sm-inline">Hibernate</span></a>
+                    </li>
+
+
+                    <li>
+                        <a href="#webServices" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i>
+                            <span class="ms-1 d-none d-sm-inline">Web Services</span> </a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">SPRING</span> </a>
+                        <a href="#microservices" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i>
+                            <span class="ms-1 d-none d-sm-inline">Microservices</span> </a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
+                        <a href="#spring" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i>
+                            <span class="ms-1 d-none d-sm-inline">SPRING</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#springBoot" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">SPRING Boot</span> </a>
                     </li>
 
@@ -80,12 +102,12 @@
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
+                        <a href="#systemDesign" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">System Design</span> </a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle">
+                        <a href="#behavioral" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Behavioral</span> </a>
                     </li>
                 </ul>
@@ -179,6 +201,38 @@
                                <code>
                                public final class String extends Object
                                implements Serializable, Comparable&lt;String&gt;, CharSequence
+                               </code>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#corejava5" aria-expanded="false" aria-controls="corejava5">
+                               How can you access every character in String?
+                           </button>
+                       </h2>
+                       <div id="corejava5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                               <code>
+
+                               </code>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#corejava6" aria-expanded="false" aria-controls="corejava6">
+                              How to make string reverse?
+                           </button>
+                       </h2>
+                       <div id="corejava6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                               <code>
+
                                </code>
                            </div>
                        </div>
@@ -325,6 +379,7 @@
                            </div>
                        </div>
                    </div>
+
 
                    <div class="accordion-item">
                        <h2 class="accordion-header">
@@ -537,6 +592,48 @@
                        </div>
                    </div>
 
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#corejava32" aria-expanded="false" aria-controls="corejava32">
+                               What is garbage collection?
+                           </button>
+                       </h2>
+                       <div id="corejava32" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#corejava33" aria-expanded="false" aria-controls="corejava33">
+                               Upper bound and lower bound of Generics? #Globalant
+                           </button>
+                       </h2>
+                       <div id="corejava33" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="accordion-item">
+                       <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#corejava34" aria-expanded="false" aria-controls="corejava34">
+                               Composition, Aggregation, and Association in Java?
+                           </button>
+                       </h2>
+                       <div id="corejava34" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                           <div class="accordion-body bd-code-snippet">
+
+                           </div>
+                       </div>
+                   </div>
+
 
 
                    <div class="accordion-item" style="display:none;">
@@ -556,6 +653,174 @@
            </div>
             <!--End of #coreJava-->
 
+            <!--Start of Exception -->
+            <div id="exception" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Exceptions</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception1" aria-expanded="false" aria-controls="exception1">
+                                What is the parent class for all exceptions?
+                            </button>
+                        </h2>
+                        <div id="exception1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception2" aria-expanded="false" aria-controls="exception2">
+                                What are Checked and Unchecked exceptions? Give example for each of them
+                            </button>
+                        </h2>
+                        <div id="exception2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception3" aria-expanded="false" aria-controls="exception3">
+                                What is the difference between Error and Exceptions? Example for each?
+                            </button>
+                        </h2>
+                        <div id="exception3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception4" aria-expanded="false" aria-controls="exception4">
+                                What is the difference between throw and throws?
+                            </button>
+                        </h2>
+                        <div id="exception4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception5" aria-expanded="false" aria-controls="exception5">
+                                Can we have multiple exceptions in throw and throws?
+                            </button>
+                        </h2>
+                        <div id="exception5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception6" aria-expanded="false" aria-controls="exception6">
+                                What will happen if after try block you have written  catch (Exception e) {} and then catch (ArithmeticException e) {}
+                            </button>
+                        </h2>
+                        <div id="exception6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception7" aria-expanded="false" aria-controls="exception7">
+                                Why finally is used?
+                            </button>
+                        </h2>
+                        <div id="exception7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception8" aria-expanded="false" aria-controls="exception8">
+                                In What scenario finally will not execute?
+                            </button>
+                        </h2>
+                        <div id="exception8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception9" aria-expanded="false" aria-controls="exception9">
+                                What is the difference between final, finally and finalize?
+                            </button>
+                        </h2>
+                        <div id="exception9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#exception10" aria-expanded="false" aria-controls="exception10">
+                                ExceptionHandling with Method Overriding in Java ?
+                            </button>
+                        </h2>
+                        <div id="exception10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--End of Exception -->
+
+            <!--Start of Collections -->
             <div id="collectionList" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">Collections</div>
 
@@ -563,41 +828,1198 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collectionQ1" aria-expanded="false" aria-controls="collectionQ1">
+                                data-bs-target="#collectionList1" aria-expanded="false" aria-controls="collectionList1">
                             What is the contract between hashcode and equals?
                         </button>
                     </h2>
-                    <div id="collectionQ1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collectionList1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                         </div>
                     </div>
+                  </div>
                 </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList2" aria-expanded="false" aria-controls="collectionList2">
+                                What happens if we override equals and did not override hashcode?
+                            </button>
+                        </h2>
+                        <div id="collectionList2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList3" aria-expanded="false" aria-controls="collectionList3">
+                                How can we override equals and hashcode methods?
+                            </button>
+                        </h2>
+                        <div id="collectionList3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList4" aria-expanded="false" aria-controls="collectionList4">
+                                How do equals and hashcode methods internally works in the case of hashmap?
+                            </button>
+                        </h2>
+                        <div id="collectionList4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList5" aria-expanded="false" aria-controls="collectionList5">
+                                Can hashmap have null key?
+                                Can we have multiple values on a single key?
+                                Can we have multiple value with null as key
+                            </button>
+                        </h2>
+                        <div id="collectionList5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList6" aria-expanded="false" aria-controls="collectionList6">
+                                Can we have multiple values on a single key?
+                                Can we have multiple values with null as key?
+                            </button>
+                        </h2>
+                        <div id="collectionList6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList7" aria-expanded="false" aria-controls="collectionList7">
+                                Can we have multiple values with null as key?
+                            </button>
+                        </h2>
+                        <div id="collectionList7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList8" aria-expanded="false" aria-controls="collectionList8">
+                                What is the difference between hashmap and hashtable?
+                            </button>
+                        </h2>
+                        <div id="collectionList8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList9" aria-expanded="false" aria-controls="collectionList9">
+                                Hash collision in Hashmap? #Globalant
+                            </button>
+                        </h2>
+                        <div id="collectionList9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList10" aria-expanded="false" aria-controls="collectionList10">
+                                For insert, select and delete operations which type of collection will you use?
+                            </button>
+                        </h2>
+                        <div id="collectionList10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList11" aria-expanded="false" aria-controls="collectionList11">
+                                Which collection will you use for sorted data? And which for unique data?
+                            </button>
+                        </h2>
+                        <div id="collectionList11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList12" aria-expanded="false" aria-controls="collectionList12">
+                                How can you make the collection synchronized?
+                            </button>
+                        </h2>
+                        <div id="collectionList12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList13" aria-expanded="false" aria-controls="collectionList13">
+                                What is the difference between Collection and collections?
+                            </button>
+                        </h2>
+                        <div id="collectionList13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList14" aria-expanded="false" aria-controls="collectionList14">
+                                Difference between iterable and iterator?
+                            </button>
+                        </h2>
+                        <div id="collectionList14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList15" aria-expanded="false" aria-controls="collectionList15">
+                                What is the difference between comparable and comparator?
+                            </button>
+                        </h2>
+                        <div id="collectionList15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList16" aria-expanded="false" aria-controls="collectionList16">
+                                When will you use Comparator and Comparable interfaces?
+                            </button>
+                        </h2>
+                        <div id="collectionList16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList17" aria-expanded="false" aria-controls="collectionList17">
+                                What are the two ways to iterate over a collection?
+                            </button>
+                        </h2>
+                        <div id="collectionList17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList18" aria-expanded="false" aria-controls="collectionList18">
+                                How to <b>Order</b> elements in TreeSet and how to perform equality? #Cognizant
+                            </button>
+                        </h2>
+                        <div id="collectionList18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList19" aria-expanded="false" aria-controls="collectionList19">
+                                Array vs collections? #Globalant
+                            </button>
+                        </h2>
+                        <div id="collectionList19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList20" aria-expanded="false" aria-controls="collectionList20">
+                                Which collection can help to retrieve min and max elements in o(n) complexity? #Globalant
+                            </button>
+                        </h2>
+                        <div id="collectionList20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList21" aria-expanded="false" aria-controls="collectionList21">
+                                Find min and max element of a list in o(1) complexity? #Globalant
+                            </button>
+                        </h2>
+                        <div id="collectionList21" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collectionList22" aria-expanded="false" aria-controls="collectionList22">
+                                <code> List&lt;Employee&gt; </code> - Given this list how to sort employee by employeeID?
+                            </button>
+                        </h2>
+                        <div id="collectionList22" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--End of Collections -->
+
+            <!--Start of Thread -->
+            <div id="threading" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">THREADING</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading1" aria-expanded="false" aria-controls="threading1">
+                                What is the mechanism to create thread?
+                            </button>
+                        </h2>
+                        <div id="threading1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading2" aria-expanded="false" aria-controls="threading2">
+                                What are the different classes/interfaces under the Executor framework?
+                            </button>
+                        </h2>
+                        <div id="threading2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading3" aria-expanded="false" aria-controls="threading3">
+                                How to handle exceptions for Thread?
+                            </button>
+                        </h2>
+                        <div id="threading3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading4" aria-expanded="false" aria-controls="threading4">
+                                What is synchronization? What is static synchronization?
+                            </button>
+                        </h2>
+                        <div id="threading4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading5" aria-expanded="false" aria-controls="threading5">
+                                Why wait (), notify () and notifyAll() are defined in object class?
+                            </button>
+                        </h2>
+                        <div id="threading5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading6" aria-expanded="false" aria-controls="threading6">
+                                Which are the different states in which thread lives?
+                            </button>
+                        </h2>
+                        <div id="threading6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading7" aria-expanded="false" aria-controls="threading7">
+                                How can we stop running threads?
+                            </button>
+                        </h2>
+                        <div id="threading7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading8" aria-expanded="false" aria-controls="threading8">
+                                What is ThreadLocal? Why it is used and real time examples.
+                            </button>
+                        </h2>
+                        <div id="threading8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading9" aria-expanded="false" aria-controls="threading9">
+                                What is AtomicInteger?.
+                            </button>
+                        </h2>
+                        <div id="threading9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading10" aria-expanded="false" aria-controls="threading10">
+                                What are locks and types of it?.
+                            </button>
+                        </h2>
+                        <div id="threading10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading11" aria-expanded="false" aria-controls="threading11">
+                                How to create Thread Safe Singleton without using synchronized keywords? #Globalant
+                            </button>
+                        </h2>
+                        <div id="threading11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading12" aria-expanded="false" aria-controls="threading12">
+                                What is the wait/notify mechanism?
+                            </button>
+                        </h2>
+                        <div id="threading12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading13" aria-expanded="false" aria-controls="threading13">
+                                What is Semaphore?
+                            </button>
+                        </h2>
+                        <div id="threading13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is used in case when we want to control the number of threads accessing the resources,
+                                we can just create that many permissions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading14" aria-expanded="false" aria-controls="threading14">
+                                What effect Liveness of a program?
+                            </button>
+                        </h2>
+                        <div id="threading14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                DeadLock <br>
+                                LiveLock <br>
+                                Startvetion
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading15" aria-expanded="false" aria-controls="threading15">
+                                What happens if you have a <b>static synchronized</b> block and <b>instance synchronized</b> block? Can both run simultaneously?
+                            </button>
+                        </h2>
+                        <div id="threading15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                YES both can run in parallel as both acquire different locks.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threading16" aria-expanded="false" aria-controls="threading16">
+                                What issue can happen if multiple Thread use the same restTemplate?
+                            </button>
+                        </h2>
+                        <div id="threading16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                say request 1 can create some cookies and send it back, now request 2 might use the same cookies hence we have to be careful while using restTemplate.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--End of Thread -->
+
+            <!--Start of SQL -->
+            <div id="sql" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">SQL</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql1" aria-expanded="false" aria-controls="sql1">
+                                What is the difference between a Statement and PreparedStatement?
+                            </button>
+                        </h2>
+                        <div id="sql1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                A <strong>Statement</strong> is a simple SQL statement that is executed immediately,
+                                while a <strong>PreparedStatement</strong> is a precompiled SQL statement that can be reused multiple times with different parameters, resulting in faster execution times and increased security.
+
+                                <p>
+                                    <strong>Precompiled</strong> in the context of a PreparedStatement means that the SQL statement is <b>compiled</b> by the <b>database</b> server before it is executed.
+                                    This process involves <b>parsing</b> the SQL statement, <b>checking</b> it for syntax errors, and generating an <b>execution</b> plan that the database can use to efficiently execute the statement.
+                                    When you create a PreparedStatement in Java, you provide the SQL statement as a parameter to the PreparedStatement constructor.
+                                    The database server then <b>compiles</b> the SQL statement and stores it in <b>memory</b> so that it can be executed efficiently in the future.
+                                    Because the SQL statement is precompiled, it can be executed more quickly than a regular Statement, which needs to be compiled every time it is executed.
+                                    Additionally, since the database server has already checked the syntax of the SQL statement, there is less chance of encountering syntax errors at runtime.
+                                    Overall, using a PreparedStatement can lead to better performance and more reliable code compared to using a regular Statement in Java.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql2" aria-expanded="false" aria-controls="sql2">
+                                What are the view, index and cursor?
+                            </button>
+                        </h2>
+                        <div id="sql2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql3" aria-expanded="false" aria-controls="sql3">
+                                What is the difference between Join and Union?
+                            </button>
+                        </h2>
+                        <div id="sql3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql4" aria-expanded="false" aria-controls="sql4">
+                                How to get only the first five rows from the result?
+                            </button>
+                        </h2>
+                        <div id="sql4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql5" aria-expanded="false" aria-controls="sql5">
+                                What is group by and having? Difference between having and where clause?
+                            </button>
+                        </h2>
+                        <div id="sql5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql6" aria-expanded="false" aria-controls="sql6">
+                                What is the difference between Unique key and Primary key?
+                            </button>
+                        </h2>
+                        <div id="sql6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql7" aria-expanded="false" aria-controls="sql7">
+                                What is the difference between procedure and function?
+                            </button>
+                        </h2>
+                        <div id="sql7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql8" aria-expanded="false" aria-controls="sql8">
+                                What is database normalization?
+                            </button>
+                        </h2>
+                        <div id="sql8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql9" aria-expanded="false" aria-controls="sql9">
+                                What is a Left outer join?
+                            </button>
+                        </h2>
+                        <div id="sql9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql10" aria-expanded="false" aria-controls="sql10">
+                                What is the difference between UNION and UNION ALL?
+                            </button>
+                        </h2>
+                        <div id="sql10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                UNION only selects distinct values, UNION ALL selects all values.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql11" aria-expanded="false" aria-controls="sql11">
+                                How to optimize query? #Globalant
+                            </button>
+                        </h2>
+                        <div id="sql11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql12" aria-expanded="false" aria-controls="sql12">
+                                What are ACID properties?
+                            </button>
+                        </h2>
+                        <div id="sql12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql13" aria-expanded="false" aria-controls="sql13">
+                                Write a query to find the 2nd highest salary from the employee table?
+                            </button>
+                        </h2>
+                        <div id="sql13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql14" aria-expanded="false" aria-controls="sql14">
+                                Write a query to find the 2nd highest salary from each department?
+                            </button>
+                        </h2>
+                        <div id="sql14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sql15" aria-expanded="false" aria-controls="sql15">
+                                What is the Database dumps?
+                            </button>
+                        </h2>
+                        <div id="sql15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--End of SQL -->
 
-            <!--End of Collections -->
+            <!--Start of Hibernate -->
+            <div id="hibernate" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Hibernate</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate1" aria-expanded="false" aria-controls="hibernate1">
+                                What is hibernate?
+                            </button>
+                        </h2>
+                        <div id="hibernate1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate2" aria-expanded="false" aria-controls="hibernate2">
+                                What do you mean by ORM?
+                            </button>
+                        </h2>
+                        <div id="hibernate2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate3" aria-expanded="false" aria-controls="hibernate3">
+                                Advantages of hibernate over JDBC?
+                            </button>
+                        </h2>
+                        <div id="hibernate3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate4" aria-expanded="false" aria-controls="hibernate4">
+                                Write down the code\syntax for hibernate.cfg.xml and .hbm.xml file
+                            </button>
+                        </h2>
+                        <div id="hibernate4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate5" aria-expanded="false" aria-controls="hibernate5">
+                                What are the different types of mapping present in hibernate? Write down code for same
+                            </button>
+                        </h2>
+                        <div id="hibernate5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate6" aria-expanded="false" aria-controls="hibernate6">
+                                What is the caching mechanism? What are the advantages? What are the different types of it?
+                            </button>
+                        </h2>
+                        <div id="hibernate6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate7" aria-expanded="false" aria-controls="hibernate7">
+                                What is a session factory?
+                            </button>
+                        </h2>
+                        <div id="hibernate7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate8" aria-expanded="false" aria-controls="hibernate8">
+                                How do you execute a query in hibernate?
+                            </button>
+                        </h2>
+                        <div id="hibernate8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate9" aria-expanded="false" aria-controls="hibernate9">
+                                What is cascading?
+                            </button>
+                        </h2>
+                        <div id="hibernate9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                When we perform some action on the target entity, the same action will be applied to the associated entity.
+                                for example the Person–Address relationship, without the Person, the Address entity doesn't have any meaning of its own.<br>
+                                When we delete the Person entity, our Address entity should also get deleted.
+
+
+                                <ul>
+                                    <b>JPA Cascade Type:</b>
+                                    <li>ALL</li>
+                                    <li>PERSIST</li>
+                                    <li>MERGE</li>
+                                    <li>REMOVE</li>
+                                    <li>REFRESH</li>
+                                    <li>DETACH</li>
+                                </ul>
+
+                                <ul>
+                                    <b>Hibernate Cascade Type:</b>
+                                    <li>REPLICATE</li>
+                                    <li>SAVE_UPDATE</li>
+                                    <li>LOCK</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate10" aria-expanded="false" aria-controls="hibernate10">
+                                Difference between get() and load() method in hibernate?
+                            </button>
+                        </h2>
+                        <div id="hibernate10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <code>
+                                    Employee employee1 = session.load(Employee.class,20); //Step-1 <br>
+                                    System.out.println(employee1.getEmployeeId(); //Step-2 --o/p=20 <br>
+                                    system.out.println(employee1.getEmployeeName(); //Step-3 -->O/P:ObjectNotFoundException <br>
+                                </code>
+                                    If you use load in step-1 hibernate won't fire any select query to fetch employee record from DB at this moment, now at this pint hibernate gives a dummy object ( Proxy ).
+                                    This dummy object doesn't contain anything, it is new Employee(20) and you can verify this in step-2 it will print 20 but in step-3 we are trying to find employee information so at this time hibernate fires a sql query to fetch Employee object.
+                                    If it is not found in DB then it throws ObjectNotFoundException.
+                                <br>
+                                <br>
+                                <code>
+                                    Employee employee2 = session.get(Employee.class,20); //Step-4
+                                </code>
+                                </br>
+                                    For session.get() hibernate fires a sql query to fetch the data from db. so in our case id=20 not exists in DB. so it will return null
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate11" aria-expanded="false" aria-controls="hibernate11">
+                                What is the <b>N+1</b> problem?
+                            </button>
+                        </h2>
+                        <div id="hibernate11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate12" aria-expanded="false" aria-controls="hibernate12">
+                                What are the layers in hibernate?
+                            </button>
+                        </h2>
+                        <div id="hibernate12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate13" aria-expanded="false" aria-controls="hibernate13">
+                                Isolation in hibernate?
+                            </button>
+                        </h2>
+                        <div id="hibernate13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hibernate14" aria-expanded="false" aria-controls="hibernate14">
+                                How does hibernate handle multiple threading transactions?
+                            </button>
+                        </h2>
+                        <div id="hibernate14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--End of Hibernate -->
+
+            <!--Start of Microservices -->
+            <div id="microservices" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Microservices</div>
+            </div>
+            <!--End of Microservices -->
+
+            <!--Start of Spring -->
+            <div id="spring" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Spring</div>
+            </div>
+            <!--End of Spring -->
+
+            <!--Start of SpringBoot -->
+            <div id="springBoot" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">SpringBoot</div>
+            </div>
+            <!--End of SpringBoot -->
 
             <!--Start of Design Patterns -->
             <div id="designPattern" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">Design Patterns</div>
+
                 <div class="accordion">
                     <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
-                            What is a Singleton Pattern? Implement code for it?
-                            What will happen in case of cloning, reflection, serialisation.
-                        </button>
-                    </h2>
-                    <div id="collapse33" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body bd-code-snippet">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                                What is a Singleton Pattern? Implement code for it?
+                                What will happen in case of cloning, reflection, serialisation.
+                            </button>
+                        </h2>
+                        <div id="collapse33" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
 
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                            </button>
+                        </h2>
+                        <div id="collapse34" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--End of designPattern -->
 
+            <!--Start of System Design -->
+            <div id="systemDesign" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">System Design</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign1" aria-expanded="false" aria-controls="systemDesign1">
+                            </button>
+                        </h2>
+                        <div id="systemDesign1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of System Design -->
+
+            <!--Start of behavioral -->
+            <div id="behavioral" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Behavioral</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#behavioral1" aria-expanded="false" aria-controls="behavioral1">
+                            </button>
+                        </h2>
+                        <div id="behavioral1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of behavioral-->
 
         </div> <!--End of col py-3-->
     </div>
