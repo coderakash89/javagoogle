@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="seobility" content="d1aee759270606e496b0e46a58f8975b">
     <title>Interview Questions</title>
     <meta name="site" content="javagoogle">
     <meta name="description" content="Learn and Practice on almost all coding interview questions asked historically">
@@ -36,7 +37,7 @@
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    <span class="fs-5 d-none d-sm-inline">Topic</span>
                 </a>
 
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
@@ -1391,7 +1392,7 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#threading15" aria-expanded="false" aria-controls="threading15">
-                                What happens if you have a <b>static synchronized</b> block and <b>instance synchronized</b> block? Can both run simultaneously?
+                                What happens if you have a&nbsp;<b>static synchronized</b>&nbsp;block and&nbsp;<b>instance synchronized</b>&nbsp;block? Can both run simultaneously?
                             </button>
                         </h2>
                         <div id="threading15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -1929,6 +1930,233 @@
 
             </div>
             <!--End of Hibernate -->
+
+            <div id="webServices" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="badge bg-primary text-capitalize">Web Services</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices1" aria-expanded="false" aria-controls="webServices1">
+                                What happens if the discovery server goes down?, also what will happen say if service A has gets the host and port details from discovery server about service B and then discovery server goes down?
+                            </button>
+                        </h2>
+                        <div id="webServices1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices2" aria-expanded="false" aria-controls="webServices2">
+                                Difference between soap and rest?Which is more secure? Which should we choose when?
+                            </button>
+                        </h2>
+                        <div id="webServices2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices3" aria-expanded="false" aria-controls="webServices3">
+                                In the case of SOAP how do you expose the API to the client? how does the client create a request/response model at his end?
+                            </button>
+                        </h2>
+                        <div id="webServices3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices4" aria-expanded="false" aria-controls="webServices4">
+                                What are the REST standards?
+                            </button>
+                        </h2>
+                        <div id="webServices4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                REST defines a set of architectural principles by which you can design Web services that focus on a system's resources,
+                                including how resource states are addressed and transferred over HTTP by a wide range of clients written in different languages.
+                                <b>Roy Fielding</b> introduced the REST architectural pattern in <b>2000</b>.
+                                Fielding doesn’t mandate specific requirements. Instead, he defines REST regarding constraints and architectural elements.
+                                REST (Representational State Transfer) is basically an <b>architectural style</b> of development having some principles. <br>
+
+                                REST based services follow the some of the below principles and not all. <br>
+                                RESTFUL services means it follows all the below principles. <br>
+
+                                    <ul>
+                                        <b>REST's Architectural Constraints</b>
+                                        <li>
+                                            <strong>Client-server</strong> – REST applications have a server that manages application <b>data</b> and <b>state</b>. <br>
+                                            The server communicates with a client that handles the user interactions. <br>
+                                            A clear separation of concerns divides the two components. <br>
+                                            This means you can update and improve them in independent tracks.
+                                        </li>
+
+                                        <li>
+                                            <strong>Stateless</strong> – Servers doesn't maintain any client state. <br>
+                                            Clients manage their application state. <br>
+                                            Their requests to servers contain all the information required to process them.
+                                        </li>
+
+                                        <li>
+                                            <strong>Cacheable</strong> –Servers must mark their responses as <b>cacheable</b> or <b>non-cacheable</b>.<br>
+                                            So the <b>infrastructures</b> and <b>clients</b> can cache them when possible to improve performance.<br>
+                                            They can dispose of non-cacheable Information, so no client uses <b>stale data</b>.
+                                        </li>
+
+                                        <li>
+                                            <strong>Uniform interface</strong> – This constraint is REST's most well known feature or rule, depending on whom you ask.<br>
+                                            Fielding says "The central feature that distinguishes the REST architectural style from other network-based styles is its emphasis on a uniform interface between components."<br>
+                                            REST services provide data as resources, with a consistent namespace.
+                                        </li>
+
+                                        <li>
+                                            <strong>Layered system</strong> – Components in the system cannot "see" beyond their layer.<br>
+                                            So you can easily add load-balancers and proxies to improve security or performance.
+                                        </li>
+
+                                        <li>
+                                            <strong>Sessions</strong> – It does not have session.
+                                        </li>
+
+                                        <li>
+                                            <strong>HTTP verb's</strong> – For performing CRUD operations, it should use HTTP verbs such as get, post, put and delete.<br>
+                                            These verbs correspond directly to the activity on the data. GET, POST, PUT, DELETE and PATCH all have specific contracts.<br>
+                                            Also, most well-designed REST APIs also return specific HTTP codes, depending on the result of the request.
+                                        </li>
+
+                                        <li>
+                                            <strong>URI</strong> – It should expose directory structure like URI's and it should access all the resources from the server using only URI.
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices5" aria-expanded="false" aria-controls="webServices5">
+                                Explain PUT and POST?
+                            </button>
+                        </h2>
+                        <div id="webServices5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                PUT is an idempotent method while POST is not. <br>
+                                For instance calling the PUT method multiple times will either create or update the <b>same resource</b>.
+                                On the contrary multiple POST requests will lead to the <b>creation</b> of the same resource <b>multiple times</b>. <br>
+
+                                E.g- <br>
+                                POST  - http://localhost:8080/addresses - Create a new resource. <br>
+                                PUT   - http://localhost:8080/addresses/1 - Update a specific resource (by id)<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#webServices6" aria-expanded="false" aria-controls="webServices6">
+                                HTTP Error codes?
+                            </button>
+                        </h2>
+                        <div id="webServices6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <div class="container text-left">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            Status code
+                                        </div>
+                                        <div class="col-sm-8">
+                                            Meaning
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            200 (OK)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            This is the standard response for successful HTTP requests.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            204 (NO CONTENT)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            This is the standard response for successful HTTP requests, where nothing is being returned in the response body.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            400 (BAD REQUEST)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            The request cannot be processed because of bad request syntax, excessive size, or another client error.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            403 (FORBIDDEN)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            The client does not have permission to access this resource.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            404 (NOT FOUND)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            The resource could not be found at this time. It is possible it was deleted, or does not exist yet.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            500 (INTERNAL SERVER ERROR)
+                                        </div>
+                                        <div class="col-sm-8">
+                                            The generic answer for an unexpected failure if there is no more specific information available.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!--Start of Microservices -->
             <div id="microservices" class="shadow p-3 mb-5 bg-body-tertiary rounded">
