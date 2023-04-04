@@ -894,7 +894,6 @@
             </div>
             <!--end of Java8 -->
 
-
             <!--Start of Exception -->
             <div id="exception" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">Exceptions</div>
@@ -2401,12 +2400,765 @@
             <!--Start of Spring -->
             <div id="spring" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">Spring</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring1" aria-expanded="false" aria-controls="spring1">
+                                Spring bean life cycle?
+                            </button>
+                        </h2>
+                        <div id="spring1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <b>SpringBoot</b> - It provides support for the in-memory database such as H2.
+                                <b>Spring</b> - It defining the dispatcher servlet, mappings, and other supporting configurations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring2" aria-expanded="false" aria-controls="spring2">
+                                @Bean vs @component?
+                            </button>
+                        </h2>
+                        <div id="spring2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <b>SpringBoot</b> - It provides support for the in-memory database such as H2.
+                                <b>Spring</b> - It defining the dispatcher servlet, mappings, and other supporting configurations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring3" aria-expanded="false" aria-controls="spring3">
+                                What are the different scopes of Spring beans?
+                            </button>
+                        </h2>
+                        <div id="spring3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <ul>
+                                    <li>
+                                        Singleton
+                                    </li>
+                                    <li>
+                                        Prototype
+                                    </li>
+                                    <li>
+                                        Request
+                                    </li>
+                                    <li>
+                                        Session
+                                    </li>
+                                    <li>
+                                        Websocket
+                                    </li>
+                                    <li>
+                                        Websocket
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring4" aria-expanded="false" aria-controls="spring4">
+                                Spring AOP?
+                            </button>
+                        </h2>
+                        <div id="spring4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring5" aria-expanded="false" aria-controls="spring5">
+                                How to measure time required between different layers?,<br>e.g time required between controller and service layer using AOP
+                            </button>
+                        </h2>
+                        <div id="spring5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring6" aria-expanded="false" aria-controls="spring6">
+                                What is IOC? #Globalant
+                            </button>
+                        </h2>
+                        <div id="spring6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring7" aria-expanded="false" aria-controls="spring7">
+                                How autowiring work? #Cognizant?
+                            </button>
+                        </h2>
+                        <div id="spring7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring8" aria-expanded="false" aria-controls="spring8">
+                                Can Spring create 2 beans of the same class? #Globalant #Cognizant
+                            </button>
+                        </h2>
+                        <div id="spring8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                If more than one bean of the same <i>type</i> is available in the container, the framework will throw <b>NoUniqueBeanDefinitionException</b>,
+                                indicating that more than one bean is available for autowiring.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring9" aria-expanded="false" aria-controls="spring9">
+                                What are the Qualifiers? #Globalant
+                            </button>
+                        </h2>
+                        <div id="spring9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring10" aria-expanded="false" aria-controls="spring10">
+                                How to handle Exceptions in Spring? #Cognizant
+                            </button>
+                        </h2>
+                        <div id="spring10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring11" aria-expanded="false" aria-controls="spring11">
+                                How to control object creation order?, example - I want bean a created first then b and then c.? #Cognizant
+                            </button>
+                        </h2>
+                        <div id="spring11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring12" aria-expanded="false" aria-controls="spring12">
+                                Explain usage of PUT, POST, GET, DELETE and their response code. #Cognizant
+                            </button>
+                        </h2>
+                        <div id="spring12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring13" aria-expanded="false" aria-controls="spring13">
+                                Mention steps and how to implement Spring DI on your own?
+                            </button>
+                        </h2>
+                        <div id="spring13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#spring14" aria-expanded="false" aria-controls="spring14">
+                                Is ApplicationContext a class or an interface? What classes does it implement/extends?
+                            </button>
+                        </h2>
+                        <div id="spring14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--End of Spring -->
 
             <!--Start of SpringBoot -->
             <div id="springBoot" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">SpringBoot</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot1" aria-expanded="false" aria-controls="springBoot1">
+                                Difference between Spring and Boot?
+                            </button>
+                        </h2>
+                        <div id="springBoot1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <b>SpringBoot</b> - It provides support for the in-memory database such as H2.
+                                <b>Spring</b> - It defining the dispatcher servlet, mappings, and other supporting configurations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot2" aria-expanded="false" aria-controls="springBoot2">
+                                How to identify if an application is a SpringBoot or Spring MVC application?
+                            </button>
+                        </h2>
+                        <div id="springBoot2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                In is a <b>SpringBoot</b> app <code>@SpringBootApplication</code> annotation should be in the main of the app and the class could be named something like XXXXXApplication. <br>
+                                Also in <b>SpringBoot</b> application check the pom.xml you will see starter dependencies.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot3" aria-expanded="false" aria-controls="springBoot3">
+                                What is the minimum number of Jars required for a SpringBoot application?
+                            </button>
+                        </h2>
+                        <div id="springBoot3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                Spring-boot-starter-parent <br>
+                                spring-boot-starter-web
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot4" aria-expanded="false" aria-controls="springBoot4">
+                                How do you manage security at springBoot applications?
+                            </button>
+                        </h2>
+                        <div id="springBoot4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <ul>
+                                    <li>
+                                        The pattern matching for endpoints
+                                    </li>
+                                    <li>
+                                        OAuth 2.0
+                                    </li>
+                                    <li>
+                                        Form Login
+                                    </li>
+                                    <li>
+                                        HTTP
+                                    </li>
+                                    <li>
+                                        OIDC
+                                    </li>
+                                    <li>
+                                        Okta
+                                    </li>
+                                    <li>
+                                        @PreAuthorize
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot5" aria-expanded="false" aria-controls="springBoot5">
+                                How to validate incoming variables under method?
+                            </button>
+                        </h2>
+                        <div id="springBoot5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                 <pre>
+                                        @Min(value = 18, message = "Age should not be less than 18")
+                                        Add below dependency- hibernate-validator is entirely separate from the persistence aspects of Hibernate.
+                                        So, by adding it as a dependency, we're not adding these persistence aspects into the project.
+                                        &lt;dependency&gt;
+                                            &lt;groupId&gt;org.hibernate.validator&lt;/groupId&gt;
+                                            &lt;artifactId&gt;hibernate-validator&lt;/artifactId&gt;
+                                            &lt;version&gt;6.0.13.Final&lt;/version&gt;
+                                        &lt;/dependency&gt;
+
+                                        @Max(value = 150, message = "Age should not be greater than 150")
+                                        private int age;
+
+                                        @Email(message = "Email should be valid")
+                                        private String email;
+
+                                        Some other validator-
+                                            @NotNull validates that the annotated property value is not null.
+                                            @AssertTrue validates that the annotated property value is true.
+                                            @Size validates that the annotated property value has a size between the attributes min and max;
+                                            can be applied to String, Collection, Map, and array properties.
+                                            @Min validates that the annotated property has a value no smaller than the value attribute.
+                                            @Max validates that the annotated property has a value no larger than the value attribute.
+                                            @Email validates that the annotated property is a valid email address.
+
+                                        For Bean-When Spring finds an argument annotated with @Valid, it automatically validates the argument and
+                                        throws an exception if the validation fails.
+                                        @PostMapping("/register")
+                                        public ResponseEntity&lt;User&gt; registerUser(@Valid @RequestBody RegisterUserDto registerUserDto) {
+                                            User createdUser = userService.create(registerUserDto.toUser());
+                                            return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
+                                        }
+
+                                        @Data
+                                        public class RegisterUserDto {
+                                            @NotEmpty(message = "The full name is required.")
+                                            @Size(min = 2, max = 100, message = "The length of full name must be between 2 and 100 characters.")
+                                            private String fullName;
+
+                                            @NotEmpty(message = "The email address is required.")
+                                            @Email(message = "The email address is invalid.", flags = { Flag.CASE_INSENSITIVE })
+                                            private String email;
+                                        }
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot6" aria-expanded="false" aria-controls="springBoot6">
+                                How to write an interceptor in SpringBoot?
+                            </button>
+                        </h2>
+                        <div id="springBoot6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot7" aria-expanded="false" aria-controls="springBoot7">
+                                Difference between HandlerInterceptor and HandlerInterceptorAdaptor(or(WebMvcConfigurerAdapter)?
+                            </button>
+                        </h2>
+                        <div id="springBoot7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot8" aria-expanded="false" aria-controls="springBoot8">
+                                How to connect to DB in SpringBoot?
+                            </button>
+                        </h2>
+                        <div id="springBoot8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot9" aria-expanded="false" aria-controls="springBoot9">
+                                How do you create beans in the case of ORM?
+                            </button>
+                        </h2>
+                        <div id="springBoot9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot10" aria-expanded="false" aria-controls="springBoot10">
+                                What are the different sets of tools used in springBoot applications?
+                            </button>
+                        </h2>
+                        <div id="springBoot10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                Swagger<br>
+                                Actuator
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot11" aria-expanded="false" aria-controls="springBoot11">
+                                How do you create beans? Say in case RAML has 1000 variables then which tool is used to create java beans?
+                            </button>
+                        </h2>
+                        <div id="springBoot11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot12" aria-expanded="false" aria-controls="springBoot12">
+                                Spring boot embedded containers? And how to exclude it?
+                            </button>
+                        </h2>
+                        <div id="springBoot12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot13" aria-expanded="false" aria-controls="springBoot13">
+                                Spring boot embedded containers? And how to exclude it?
+                            </button>
+                        </h2>
+                        <div id="springBoot13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot14" aria-expanded="false" aria-controls="springBoot14">
+                                Difference between @PathVariable and @RequestParam? #Globalant
+                            </button>
+                        </h2>
+                        <div id="springBoot14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot15" aria-expanded="false" aria-controls="springBoot15">
+                                Difference between @GetMapping and @RequestMapping? #Globalant
+                            </button>
+                        </h2>
+                        <div id="springBoot15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot16" aria-expanded="false" aria-controls="springBoot16">
+                                What is&nbsp;<b>@Configuration</b>&nbsp;and&nbsp;<b>@componentScan</b>? #Globalant
+
+                            </button>
+                        </h2>
+                        <div id="springBoot16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                To create a custom auto-configuration, we need to create a class annotated as @Configuration and register it.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot17" aria-expanded="false" aria-controls="springBoot17">
+                                What is Profile? What will happen in case we pass 2 profile parameters? #Cognizan
+                            </button>
+                        </h2>
+                        <div id="springBoot17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot18" aria-expanded="false" aria-controls="springBoot18">
+                                How to deploy SpringBoot applications under PROD?
+                            </button>
+                        </h2>
+                        <div id="springBoot18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot19" aria-expanded="false" aria-controls="springBoot19">
+                                How to fetch value from property file under springBoot application? In case it's null then how to return the default value?
+                            </button>
+                        </h2>
+                        <div id="springBoot19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot20" aria-expanded="false" aria-controls="springBoot20">
+                                How property files are managed as per environment?
+                            </button>
+                        </h2>
+                        <div id="springBoot20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot21" aria-expanded="false" aria-controls="springBoot21">
+                                How to pass profile value for springBoot application?
+                            </button>
+                        </h2>
+                        <div id="springBoot21" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot22" aria-expanded="false" aria-controls="springBoot22">
+                                How to get all request parameters key value?
+                            </button>
+                        </h2>
+                        <div id="springBoot22" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot23" aria-expanded="false" aria-controls="springBoot23">
+                                How to perform Centralized logging?
+                            </button>
+                        </h2>
+                        <div id="springBoot23" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot24" aria-expanded="false" aria-controls="springBoot24">
+                                Application server in SpringBoot?
+                            </button>
+                        </h2>
+                        <div id="springBoot24" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot25" aria-expanded="false" aria-controls="springBoot25">
+                                What is Lazy loading?
+                            </button>
+                        </h2>
+                        <div id="springBoot25" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot26" aria-expanded="false" aria-controls="springBoot26">
+                                What are the different tools available to monitor health for SpringBoot application?
+                            </button>
+                        </h2>
+                        <div id="springBoot26" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+                                <ul>
+                                    <li>
+                                        Wily
+                                    </li>
+                                    <li>
+                                        App Dyanamics
+                                    </li>
+                                    <li>
+                                        Ganglia Monitoring System
+                                    </li>
+                                    <li>
+                                        Google tag manager
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot27" aria-expanded="false" aria-controls="springBoot27">
+                                How is security managed in your application? How do you know if it's a valid request or invalid?
+                            </button>
+                        </h2>
+                        <div id="springBoot27" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot28" aria-expanded="false" aria-controls="springBoot28">
+                                How do you use the JWT token? How do you fetch it from the server and then pass it to the intended system?
+                            </button>
+                        </h2>
+                        <div id="springBoot28" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot29" aria-expanded="false" aria-controls="springBoot29">
+                                How to write a test case for a private function?
+                            </button>
+                        </h2>
+                        <div id="springBoot29" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot30" aria-expanded="false" aria-controls="springBoot30">
+                                How to configure JWT?
+                            </button>
+                        </h2>
+                        <div id="springBoot30" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot31" aria-expanded="false" aria-controls="springBoot31">
+                                How to create Interceptor?
+                            </button>
+                        </h2>
+                        <div id="springBoot31" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#springBoot32" aria-expanded="false" aria-controls="springBoot32">
+                                How to create filter in spring boot?
+                            </button>
+                        </h2>
+                        <div id="springBoot32" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--End of SpringBoot -->
 
