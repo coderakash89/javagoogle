@@ -890,6 +890,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#java817" aria-expanded="false" aria-controls="java817">
+                                Java Memory Management and Changes in Java 8?
+                            </button>
+                        </h2>
+                        <div id="java817" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--end of Java8 -->
@@ -2102,7 +2116,7 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#hibernate11" aria-expanded="false" aria-controls="hibernate11">
-                                What is the <b>N+1</b> problem?
+                                What is the&nbsp;<b>N+1</b>&nbsp;problem?
                             </button>
                         </h2>
                         <div id="hibernate11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -2181,9 +2195,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -2197,9 +2209,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -2213,9 +2223,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -2234,61 +2242,58 @@
                                 REST based services follow the some of the below principles and not all. <br>
                                 RESTFUL services means it follows all the below principles. <br>
 
-                                    <ul>
-                                        <b>REST's Architectural Constraints</b>
-                                        <li>
-                                            <strong>Client-server</strong> – REST applications have a server that manages application <b>data</b> and <b>state</b>. <br>
-                                            The server communicates with a client that handles the user interactions. <br>
-                                            A clear separation of concerns divides the two components. <br>
-                                            This means you can update and improve them in independent tracks.
-                                        </li>
+                                <ul>
+                                    <b>REST's Architectural Constraints</b>
+                                    <li>
+                                        <strong>Client-server</strong> – REST applications have a server that manages application <b>data</b> and <b>state</b>. <br>
+                                        The server communicates with a client that handles the user interactions. <br>
+                                        A clear separation of concerns divides the two components. <br>
+                                        This means you can update and improve them in independent tracks.
+                                    </li>
 
-                                        <li>
-                                            <strong>Stateless</strong> – Servers doesn't maintain any client state. <br>
-                                            Clients manage their application state. <br>
-                                            Their requests to servers contain all the information required to process them.
-                                        </li>
+                                    <li>
+                                        <strong>Stateless</strong> – Servers doesn't maintain any client state. <br>
+                                        Clients manage their application state. <br>
+                                        Their requests to servers contain all the information required to process them.
+                                    </li>
 
-                                        <li>
-                                            <strong>Cacheable</strong> –Servers must mark their responses as <b>cacheable</b> or <b>non-cacheable</b>.<br>
-                                            So the <b>infrastructures</b> and <b>clients</b> can cache them when possible to improve performance.<br>
-                                            They can dispose of non-cacheable Information, so no client uses <b>stale data</b>.
-                                        </li>
+                                    <li>
+                                        <strong>Cacheable</strong> –Servers must mark their responses as <b>cacheable</b> or <b>non-cacheable</b>.<br>
+                                        So the <b>infrastructures</b> and <b>clients</b> can cache them when possible to improve performance.<br>
+                                        They can dispose of non-cacheable Information, so no client uses <b>stale data</b>.
+                                    </li>
 
-                                        <li>
-                                            <strong>Uniform interface</strong> – This constraint is REST's most well known feature or rule, depending on whom you ask.<br>
-                                            Fielding says "The central feature that distinguishes the REST architectural style from other network-based styles is its emphasis on a uniform interface between components."<br>
-                                            REST services provide data as resources, with a consistent namespace.
-                                        </li>
+                                    <li>
+                                        <strong>Uniform interface</strong> – This constraint is REST's most well known feature or rule, depending on whom you ask.<br>
+                                        Fielding says "The central feature that distinguishes the REST architectural style from other network-based styles is its emphasis on a uniform interface between components."<br>
+                                        REST services provide data as resources, with a consistent namespace.
+                                    </li>
 
-                                        <li>
-                                            <strong>Layered system</strong> – Components in the system cannot "see" beyond their layer.<br>
-                                            So you can easily add load-balancers and proxies to improve security or performance.
-                                        </li>
+                                    <li>
+                                        <strong>Layered system</strong> – Components in the system cannot "see" beyond their layer.<br>
+                                        So you can easily add load-balancers and proxies to improve security or performance.
+                                    </li>
 
-                                        <li>
-                                            <strong>Sessions</strong> – It does not have session.
-                                        </li>
+                                    <li>
+                                        <strong>Sessions</strong> – It does not have session.
+                                    </li>
 
-                                        <li>
-                                            <strong>HTTP verb's</strong> – For performing CRUD operations, it should use HTTP verbs such as get, post, put and delete.<br>
-                                            These verbs correspond directly to the activity on the data. GET, POST, PUT, DELETE and PATCH all have specific contracts.<br>
-                                            Also, most well-designed REST APIs also return specific HTTP codes, depending on the result of the request.
-                                        </li>
+                                    <li>
+                                        <strong>HTTP verb's</strong> – For performing CRUD operations, it should use HTTP verbs such as get, post, put and delete.<br>
+                                        These verbs correspond directly to the activity on the data. GET, POST, PUT, DELETE and PATCH all have specific contracts.<br>
+                                        Also, most well-designed REST APIs also return specific HTTP codes, depending on the result of the request.
+                                    </li>
 
-                                        <li>
-                                            <strong>URI</strong> – It should expose directory structure like URI's and it should access all the resources from the server using only URI.
-                                        </li>
-                                    </ul>
+                                    <li>
+                                        <strong>URI</strong> – It should expose directory structure like URI's and it should access all the resources from the server using only URI.
+                                    </li>
+                                </ul>
 
 
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -2308,9 +2313,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -2394,6 +2397,78 @@
             <!--Start of Microservices -->
             <div id="microservices" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                 <div class="badge bg-primary text-capitalize">Microservices</div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#microservices1" aria-expanded="false" aria-controls="microservices1">
+                                What are microservices? #Barclays
+                            </button>
+                        </h2>
+                        <div id="microservices1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#microservices2" aria-expanded="false" aria-controls="microservices2">
+                                Microservices 12 Factor patterns?
+                            </button>
+                        </h2>
+                        <div id="microservices2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#microservices3" aria-expanded="false" aria-controls="microservices3">
+                                What problem does microservice architecture solve? #Barclays
+                            </button>
+                        </h2>
+                        <div id="microservices3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#microservices4" aria-expanded="false" aria-controls="microservices4">
+                                What are the major di-advantages for microservice architecture? #Barclays
+                            </button>
+                        </h2>
+                        <div id="microservices4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#microservices5" aria-expanded="false" aria-controls="microservices5">
+                                How do we use commonDB and separate DB in MS? #Barclays
+                            </button>
+                        </h2>
+                        <div id="microservices5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--End of Microservices -->
 
@@ -3209,9 +3284,136 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#systemDesign1" aria-expanded="false" aria-controls="systemDesign1">
+                                What are SOLID principles?
                             </button>
                         </h2>
                         <div id="systemDesign1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign2" aria-expanded="false" aria-controls="systemDesign2">
+                                What is Sticky load balancing? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign3" aria-expanded="false" aria-controls="systemDesign3">
+                                What is a distributed cache? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign4" aria-expanded="false" aria-controls="systemDesign4">
+                                What is SOA architecture? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign5" aria-expanded="false" aria-controls="systemDesign5">
+                                What is event driven architecture? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign6" aria-expanded="false" aria-controls="systemDesign6">
+                                What is event driven architecture? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign7" aria-expanded="false" aria-controls="systemDesign7">
+                                What is distributed architecture? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign8" aria-expanded="false" aria-controls="systemDesign8">
+                                Design a system in which a customer uploads a file and gets a report out of it? What needs to be done in case file size is like 25GB? #Barclays
+                            </button>
+                        </h2>
+                        <div id="systemDesign8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign9" aria-expanded="false" aria-controls="systemDesign9">
+                                How to configure memory in Java?
+                            </button>
+                        </h2>
+                        <div id="systemDesign9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bd-code-snippet">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#systemDesign10" aria-expanded="false" aria-controls="systemDesign10">
+                                How much maximum memory can you allocate?
+                            </button>
+                        </h2>
+                        <div id="systemDesign10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body bd-code-snippet">
 
                             </div>
@@ -3230,11 +3432,25 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#behavioral1" aria-expanded="false" aria-controls="behavioral1">
+                                What is the best work you have done so far?
                             </button>
                         </h2>
                         <div id="behavioral1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body bd-code-snippet">
-
+                                <ul>
+                                    <li>
+                                        Tell problem statement
+                                    </li>
+                                    <li>
+                                        Explain the initial approach
+                                    </li>
+                                    <li>
+                                        Explain problems faced during and after approach implementation?
+                                    </li>
+                                    <li>
+                                        Final results
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
